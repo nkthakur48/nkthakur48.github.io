@@ -1,6 +1,8 @@
+// Project Cards navigation
 const cardsElem = document.querySelectorAll('.card')
-cardsElem.forEach((card) => {
-  card.addEventListener('click', () => {
-    console.log('cicked')
+cardsElem.forEach((cardElem) => {
+  const link = cardElem.dataset.href
+  cardElem.addEventListener('click', () => {
+    window.location.href = link
   })
 })
