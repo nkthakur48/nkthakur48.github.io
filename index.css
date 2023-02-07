@@ -1,0 +1,11 @@
+.card {
+  transition: transform 0.5s;
+}
+.card:hover {
+  cursor: pointer;
+  transform: scale3d(1.05, 1.05, 1.05);
+  transition: transform 0.5s;
+}
+figure.image.is-4by3 img {
+  object-fit: cover;
+}
